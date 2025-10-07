@@ -23,3 +23,6 @@ $Start = (Get-Date).AddHours(-24); $End = Get-Date; Get-MessageTrackingLog -Send
 $StartDate = "2025-10-03 10:00:00 AM"; $EndDate = "2025-10-03 11:00:00 AM"; Get-MessageTrace -SenderAddress "noreply-office@ritavo.com" -RecipientAddress "Diem.nguyen@ritavo.com" -StartDate $StartDate -EndDate $EndDate | Format-List
 
 $Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End | Format-List
+
+$Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End | Export-Csv -Path "C:\MessageLog_03102025.csv" -NoTypeInformation
+
