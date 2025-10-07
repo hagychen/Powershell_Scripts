@@ -28,4 +28,5 @@ $Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageT
 
 $Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End -MessageSubject "Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM]" | Export-Csv -Path "C:\Log_RitaVo.csv" -NoTypeInformation
 
+$Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End -MessageSubject "Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM]" | Format-List | Out-File -FilePath "C:\Log_RitaVo.txt"
 
