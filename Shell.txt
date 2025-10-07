@@ -17,3 +17,6 @@ Get-MessageTrace -SenderAddress "noreply-office@ritavo.com" `
 Install-Module -Name ExchangeOnlineManagement
 
 $StartDate = (Get-Date).AddHours(-24); $EndDate = Get-Date; Get-MessageTrace -SenderAddress "noreply-office@ritavo.com" -RecipientAddress "Diem.nguyen@ritavo.com" -StartDate $StartDate -EndDate $EndDate | Format-List
+
+$Start = (Get-Date).AddHours(-24); $End = Get-Date; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End | Format-List
+
