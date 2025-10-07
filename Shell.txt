@@ -15,3 +15,5 @@ Get-MessageTrace -SenderAddress "noreply-office@ritavo.com" `
                  -EndDate $EndDate | Format-List
 ```
 
+
+Install-Module -Name ExchangeOnlineManagement
