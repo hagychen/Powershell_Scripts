@@ -1,0 +1,332 @@
+﻿MessageSubject          : Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM] [Chờ duyệt
+                          (Pending Approved)]
+Sender                  : noreply-office@ritavo.com
+ReturnPath              : noreply-office@ritavo.com
+Directionality          : Originating
+TenantId                :
+OriginalClientIp        :
+MessageInfo             :
+MessageLatency          :
+MessageLatencyType      : None
+EventData               : {[DeliveryPriority, Normal], [AccountForest, ritavo.com]}
+TransportTrafficType    : Email
+SchemaVersion           : 15.02.1544.034
+
+RunspaceId              : 2f83d4be-73c9-4cb6-a4f8-a09be309cb9b
+Timestamp               : 10/3/2025 10:00:23 AM
+ClientIp                : 172.16.1.11
+ClientHostname          : hcm-mb01.ritavo.com
+ServerIp                : 172.16.1.11
+ServerHostname          : hcm-mb01
+SourceContext           : 08DDF7A459BCDEC7;2025-10-03T03:00:23.007Z;0
+ConnectorId             : HCM-MB01\Client Proxy HCM-MB01
+Source                  : SMTP
+EventId                 : RECEIVE
+InternalMessageId       : 147398982631435
+MessageId               : <4SIBMNO2DRU4.WPGFUGZRAS6W2@workitappsrv3>
+NetworkMessageId        : 1242078c-f8b7-450d-0a22-08de0228fed9
+Recipients              : {Diem.nguyen@ritavo.com}
+RecipientStatus         : {}
+TotalBytes              : 16855
+RecipientCount          : 1
+RelatedRecipientAddress :
+Reference               :
+MessageSubject          : Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM] [Chờ duyệt
+                          (Pending Approved)]
+Sender                  : noreply-office@ritavo.com
+ReturnPath              : noreply-office@ritavo.com
+Directionality          : Originating
+TenantId                :
+OriginalClientIp        : 172.16.1.254
+MessageInfo             : 07I:
+MessageLatency          :
+MessageLatencyType      : None
+EventData               : {[Replication, hcm-mb02], [FirstForestHop, hcm-mb01.ritavo.com], [FromEntity, Hosted],
+                          [ProxiedClientIPAddress, 172.16.1.254], [ProxiedClientHostname, workitappsrv3],
+                          [DeliveryPriority, Normal], [AccountForest, ritavo.com], [Mailbox,
+                          2a363849-2ad8-493a-8bba-16268bc817ef]}
+TransportTrafficType    : Email
+SchemaVersion           : 15.02.1544.034
+
+RunspaceId              : 2f83d4be-73c9-4cb6-a4f8-a09be309cb9b
+Timestamp               : 10/3/2025 10:00:23 AM
+ClientIp                :
+ClientHostname          : hcm-mb01
+ServerIp                :
+ServerHostname          :
+SourceContext           : CatContentConversion
+ConnectorId             :
+Source                  : AGENT
+EventId                 : AGENTINFO
+InternalMessageId       : 147398982631435
+MessageId               : <4SIBMNO2DRU4.WPGFUGZRAS6W2@workitappsrv3>
+NetworkMessageId        : 1242078c-f8b7-450d-0a22-08de0228fed9
+Recipients              : {Diem.nguyen@ritavo.com}
+RecipientStatus         : {}
+TotalBytes              : 17178
+RecipientCount          : 1
+RelatedRecipientAddress :
+Reference               :
+MessageSubject          : Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM] [Chờ duyệt
+                          (Pending Approved)]
+Sender                  : noreply-office@ritavo.com
+ReturnPath              : noreply-office@ritavo.com
+Directionality          : Originating
+TenantId                :
+OriginalClientIp        : 172.16.1.254
+MessageInfo             :
+MessageLatency          :
+MessageLatencyType      : None
+EventData               : {[TRA, ETRP|ruleId=00000000-0000-0000-0000-000000000000|st=0001-01-01T00:00:00.0000000Z|ExecW
+                          =0|ExecC=0|Conditions=CP,M.RF,0], [TRA, ETRP|ruleId=e6d359cb-cef9-4ceb-b2ae-d677b857606c|st=2
+                          025-10-02T10:00:39.0000000Z|ExecW=0|ExecC=0|Conditions=ISUP,M.F,0], [TRA, ETRP|ruleId=8518c42
+                          5-39b2-48d3-90ab-5e9a51027249|st=2025-09-10T01:20:26.0000000Z|ExecW=0|ExecC=0|Conditions=GTOE
+                          P,M.S,0], [TRA,
+                          ETRI|MsgType=Normal|Ex=|IsKnown=|FipsStatus=NoFips|AttchUns=|ceErr=|Synth=False-Na-],
+                          [DeliveryPriority, Normal], [AccountForest, ritavo.com]}
+TransportTrafficType    : Email
+SchemaVersion           : 15.02.1544.034
+
+RunspaceId              : 2f83d4be-73c9-4cb6-a4f8-a09be309cb9b
+Timestamp               : 10/3/2025 10:00:23 AM
+ClientIp                : 172.16.1.11
+ClientHostname          : hcm-mb01
+ServerIp                : 172.16.1.11
+ServerHostname          : hcm-mb01.ritavo.com
+SourceContext           : ;250 2.0.0 OK <4SIBMNO2DRU4.WPGFUGZRAS6W2@workitappsrv3>
+                          [Hostname=hcm-mb01.ritavo.com];ClientSubmitTime:
+ConnectorId             : Intra-Organization SMTP Send Connector
+Source                  : SMTP
+EventId                 : SEND
+InternalMessageId       : 147398982631435
+MessageId               : <4SIBMNO2DRU4.WPGFUGZRAS6W2@workitappsrv3>
+NetworkMessageId        : 1242078c-f8b7-450d-0a22-08de0228fed9
+Recipients              : {Diem.nguyen@ritavo.com}
+RecipientStatus         : {250 2.1.5 Recipient OK}
+TotalBytes              : 20126
+RecipientCount          : 1
+RelatedRecipientAddress :
+Reference               :
+MessageSubject          : Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM] [Chờ duyệt
+                          (Pending Approved)]
+Sender                  : noreply-office@ritavo.com
+ReturnPath              : noreply-office@ritavo.com
+Directionality          : Originating
+TenantId                :
+OriginalClientIp        :
+MessageInfo             : 2025-10-03T03:00:23.036Z;LSRV=hcm-mb01.ritavo.com:TOTAL-HUB=0.560|SMR=0.163(SMRDE=0.050|SMRC=
+                          0.105(SMRCL=0.103|X-SMRCR=0.103))|CAT=0.038(CATOS=0.001|CATRESL=0.005|CATORES=0.028(CATRS=0.0
+                          28(CATRS-Transport Rule Agent=0.001(X-ETREX=0.001)|CATRS-Index Routing
+                          Agent=0.025)))|SMSC=0.020|SMS=0.335(SMSMBXD=0.325)
+MessageLatency          : 00:00:00.5600000
+MessageLatencyType      : LocalServer
+EventData               : {[E2ELatency, 0.560], [MsgRecipCount, 1], [IncludeInSla, True],
+                          [Microsoft.Exchange.Transport.MailRecipient.RequiredTlsAuthLevel, Opportunistic],
+                          [IsSmtpResponseFromExternalServer, False], [DeliveryPriority, Normal], [AccountForest,
+                          ritavo.com]}
+TransportTrafficType    : Email
+SchemaVersion           : 15.02.1544.034
+
+RunspaceId              : 2f83d4be-73c9-4cb6-a4f8-a09be309cb9b
+Timestamp               : 10/3/2025 10:00:37 AM
+ClientIp                :
+ClientHostname          :
+ServerIp                :
+ServerHostname          : hcm-mb01
+SourceContext           : hcm-mb02.ritavo.com=250 2.6.0 <EMBF0QO2DRU4.791I93G7QQHO@workitappsrv3>
+                          [InternalId=147351737991178, Hostname=hcm-mb02.ritavo.com] Queued mail for redundancy
+ConnectorId             :
+Source                  : SMTP
+EventId                 : HAREDIRECT
+InternalMessageId       : 147398982631437
+MessageId               : <EMBF0QO2DRU4.791I93G7QQHO@workitappsrv3>
+NetworkMessageId        : e4c67fc0-09c8-4935-c407-08de02290780
+Recipients              : {van.hoang@ritavo.com, Diem.nguyen@ritavo.com}
+RecipientStatus         : {}
+TotalBytes              : 17516
+RecipientCount          : 2
+RelatedRecipientAddress :
+Reference               :
+MessageSubject          : Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM] [Chờ duyệt
+                          (Pending Approved)]
+Sender                  : noreply-office@ritavo.com
+ReturnPath              : noreply-office@ritavo.com
+Directionality          : Originating
+TenantId                :
+OriginalClientIp        :
+MessageInfo             :
+MessageLatency          :
+MessageLatencyType      : None
+EventData               : {[DeliveryPriority, Normal], [AccountForest, ritavo.com]}
+TransportTrafficType    : Email
+SchemaVersion           : 15.02.1544.034
+
+RunspaceId              : 2f83d4be-73c9-4cb6-a4f8-a09be309cb9b
+Timestamp               : 10/3/2025 10:00:37 AM
+ClientIp                : 172.16.1.11
+ClientHostname          : hcm-mb01.ritavo.com
+ServerIp                : 172.16.1.11
+ServerHostname          : hcm-mb01
+SourceContext           : 08DDF7A459BCDECC;2025-10-03T03:00:37.505Z;0
+ConnectorId             : HCM-MB01\Client Proxy HCM-MB01
+Source                  : SMTP
+EventId                 : RECEIVE
+InternalMessageId       : 147398982631437
+MessageId               : <EMBF0QO2DRU4.791I93G7QQHO@workitappsrv3>
+NetworkMessageId        : e4c67fc0-09c8-4935-c407-08de02290780
+Recipients              : {van.hoang@ritavo.com, Diem.nguyen@ritavo.com}
+RecipientStatus         : {}
+TotalBytes              : 17516
+RecipientCount          : 2
+RelatedRecipientAddress :
+Reference               :
+MessageSubject          : Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM] [Chờ duyệt
+                          (Pending Approved)]
+Sender                  : noreply-office@ritavo.com
+ReturnPath              : noreply-office@ritavo.com
+Directionality          : Originating
+TenantId                :
+OriginalClientIp        : 172.16.1.254
+MessageInfo             : 07I:
+MessageLatency          :
+MessageLatencyType      : None
+EventData               : {[Replication, hcm-mb02], [FirstForestHop, hcm-mb01.ritavo.com], [FromEntity, Hosted],
+                          [ProxiedClientIPAddress, 172.16.1.254], [ProxiedClientHostname, workitappsrv3],
+                          [DeliveryPriority, Normal], [AccountForest, ritavo.com], [Mailbox,
+                          2a363849-2ad8-493a-8bba-16268bc817ef]}
+TransportTrafficType    : Email
+SchemaVersion           : 15.02.1544.034
+
+RunspaceId              : 2f83d4be-73c9-4cb6-a4f8-a09be309cb9b
+Timestamp               : 10/3/2025 10:00:37 AM
+ClientIp                :
+ClientHostname          : hcm-mb01
+ServerIp                :
+ServerHostname          :
+SourceContext           : CatContentConversion
+ConnectorId             :
+Source                  : AGENT
+EventId                 : AGENTINFO
+InternalMessageId       : 147398982631437
+MessageId               : <EMBF0QO2DRU4.791I93G7QQHO@workitappsrv3>
+NetworkMessageId        : e4c67fc0-09c8-4935-c407-08de02290780
+Recipients              : {van.hoang@ctyritavo.mail.onmicrosoft.com, Diem.nguyen@ritavo.com}
+RecipientStatus         : {}
+TotalBytes              : 17841
+RecipientCount          : 2
+RelatedRecipientAddress :
+Reference               :
+MessageSubject          : Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM] [Chờ duyệt
+                          (Pending Approved)]
+Sender                  : noreply-office@ritavo.com
+ReturnPath              : noreply-office@ritavo.com
+Directionality          : Originating
+TenantId                :
+OriginalClientIp        : 172.16.1.254
+MessageInfo             :
+MessageLatency          :
+MessageLatencyType      : None
+EventData               : {[TRA, ETRP|ruleId=00000000-0000-0000-0000-000000000000|st=0001-01-01T00:00:00.0000000Z|ExecW
+                          =0|ExecC=0|Conditions=CP,M.RF,0], [TRA, ETRP|ruleId=e6d359cb-cef9-4ceb-b2ae-d677b857606c|st=2
+                          025-10-02T10:00:39.0000000Z|ExecW=0|ExecC=0|Conditions=ISUP,M.F,0], [TRA, ETRP|ruleId=8518c42
+                          5-39b2-48d3-90ab-5e9a51027249|st=2025-09-10T01:20:26.0000000Z|ExecW=0|ExecC=0|Conditions=GTOE
+                          P,M.S,0], [TRA,
+                          ETRI|MsgType=Normal|Ex=|IsKnown=|FipsStatus=NoFips|AttchUns=|ceErr=|Synth=False-Na-],
+                          [DeliveryPriority, Normal], [AccountForest, ritavo.com]}
+TransportTrafficType    : Email
+SchemaVersion           : 15.02.1544.034
+
+RunspaceId              : 2f83d4be-73c9-4cb6-a4f8-a09be309cb9b
+Timestamp               : 10/3/2025 10:00:37 AM
+ClientIp                :
+ClientHostname          :
+ServerIp                :
+ServerHostname          : hcm-mb01
+SourceContext           : Outbound Trust Agent
+ConnectorId             :
+Source                  : AGENT
+EventId                 : TRANSFER
+InternalMessageId       : 147398982631442
+MessageId               : <EMBF0QO2DRU4.791I93G7QQHO@workitappsrv3>
+NetworkMessageId        : e4c67fc0-09c8-4935-c407-08de02290780
+Recipients              : {Diem.nguyen@ritavo.com}
+RecipientStatus         : {}
+TotalBytes              : 20550
+RecipientCount          : 1
+RelatedRecipientAddress :
+Reference               : {147398982631437}
+MessageSubject          : Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM] [Chờ duyệt
+                          (Pending Approved)]
+Sender                  : noreply-office@ritavo.com
+ReturnPath              : noreply-office@ritavo.com
+Directionality          : Originating
+TenantId                :
+OriginalClientIp        :
+MessageInfo             :
+MessageLatency          :
+MessageLatencyType      : None
+EventData               : {[DeliveryPriority, Normal], [AccountForest, ritavo.com]}
+TransportTrafficType    : Email
+SchemaVersion           : 15.02.1544.034
+
+RunspaceId              : 2f83d4be-73c9-4cb6-a4f8-a09be309cb9b
+Timestamp               : 10/3/2025 10:00:37 AM
+ClientIp                : 172.16.1.11
+ClientHostname          : hcm-mb01
+ServerIp                : 172.16.1.11
+ServerHostname          : hcm-mb01.ritavo.com
+SourceContext           : ;250 2.0.0 OK <EMBF0QO2DRU4.791I93G7QQHO@workitappsrv3>
+                          [Hostname=hcm-mb01.ritavo.com];ClientSubmitTime:
+ConnectorId             : Intra-Organization SMTP Send Connector
+Source                  : SMTP
+EventId                 : SEND
+InternalMessageId       : 147398982631442
+MessageId               : <EMBF0QO2DRU4.791I93G7QQHO@workitappsrv3>
+NetworkMessageId        : e4c67fc0-09c8-4935-c407-08de02290780
+Recipients              : {Diem.nguyen@ritavo.com}
+RecipientStatus         : {250 2.1.5 Recipient OK}
+TotalBytes              : 20996
+RecipientCount          : 1
+RelatedRecipientAddress :
+Reference               :
+MessageSubject          : Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM] [Chờ duyệt
+                          (Pending Approved)]
+Sender                  : noreply-office@ritavo.com
+ReturnPath              : noreply-office@ritavo.com
+Directionality          : Originating
+TenantId                :
+OriginalClientIp        :
+MessageInfo             : 2025-10-03T03:00:37.535Z;LSRV=hcm-mb01.ritavo.com:TOTAL-HUB=0.462|SMR=0.177(SMRDE=0.071|SMRC=
+                          0.105(SMRCL=0.102|X-SMRCR=0.105))|CAT=0.055(CATRESL=0.007|CATORES=0.030(CATRS=0.030(CATRS-Pri
+                          oritization Agent=0.004|CATRS-Transport Rule Agent=0.002(X-ETREX=0.001)|CATRS-Index Routing
+                          Agent=0.022))|CATORT=0.001(CATRT=0.001)|CATOC=0.010(CATCM=0.010(CATCM-Outbound Trust
+                          Agent=0.010)))|SMSC=0.015|SMS=0.211(SMSMBXD=0.199)
+MessageLatency          : 00:00:00.4620000
+MessageLatencyType      : LocalServer
+EventData               : {[E2ELatency, 0.462], [MsgRecipCount, 2], [IncludeInSla, True],
+                          [Microsoft.Exchange.Transport.MailRecipient.RequiredTlsAuthLevel, Opportunistic],
+                          [IsSmtpResponseFromExternalServer, False], [DeliveryPriority, Normal], [AccountForest,
+                          ritavo.com]}
+TransportTrafficType    : Email
+SchemaVersion           : 15.02.1544.034
+
+RunspaceId              : 2f83d4be-73c9-4cb6-a4f8-a09be309cb9b
+Timestamp               : 10/3/2025 10:08:00 AM
+ClientIp                :
+ClientHostname          :
+ServerIp                :
+ServerHostname          : hcm-mb01
+SourceContext           : hcm-mb02.ritavo.com=250 2.6.0 <HQJV5RQ2DRU4.ACCVGFAR672H2@workitappsrv3>
+                          [InternalId=147351737991254, Hostname=hcm-mb02.ritavo.com] Queued mail for redundancy
+ConnectorId             :
+Source                  : SMTP
+EventId                 : HAREDIRECT
+InternalMessageId       : 147398982631517
+MessageId               : <HQJV5RQ2DRU4.ACCVGFAR672H2@workitappsrv3>
+NetworkMessageId        : 97455ef5-c4cc-437e-e0e5-08de022a0f1e
+Recipients              : {Diem.nguyen@ritavo.com, duyen.trinh@ritavo.com}
+RecipientStatus         : {}
+TotalBytes              : 13485
+RecipientCount          : 2
+RelatedRecipientAddress :
+Reference               :
