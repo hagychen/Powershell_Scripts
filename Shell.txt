@@ -1,0 +1,17 @@
+```shell
+$StartDate = (Get-Date).AddHours(-24); $EndDate = Get-Date; Get-MessageTrace -SenderAddress "noreply-office@ritavo.com" -RecipientAddress "Diem.nguyen@ritavo.com" -StartDate $StartDate -EndDate $EndDate | Format-List
+```
+
+
+
+```shell
+# Ví dụ: Lấy log trong 24 giờ gần nhất
+$StartDate = (Get-Date).AddHours(-24)
+$EndDate = Get-Date
+
+Get-MessageTrace -SenderAddress "noreply-office@ritavo.com" `
+                 -RecipientAddress "Diem.nguyen@ritavo.com" `
+                 -StartDate $StartDate `
+                 -EndDate $EndDate | Format-List
+```
+
