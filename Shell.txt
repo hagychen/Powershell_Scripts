@@ -16,3 +16,5 @@ $Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageT
 $Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End -MessageSubject "Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM]" | Format-List | Out-File -FilePath "C:\Log_RitaVo.txt"
 
 Get-GPOReport -Name "Default Domain Policy" -ReportType Html -Path "C:\PasswordPolicy_RitaVo.html"
+
+Search-Mailbox -Identity "Diem.nguyen@ritavo.com" -SearchQuery 'Subject:"Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118]" AND Received:"10/3/2025"' -TargetMailbox "AdminDiscoveryMailbox" -TargetFolder "DiemNguyenFound" -LogLevel Full
