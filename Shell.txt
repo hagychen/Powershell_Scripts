@@ -15,3 +15,4 @@ Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.ngu
 -> ft Timestamp, Event Id, Source, MessageSubject, ServerHostname
 
 
+$Start = Get-Date "10/03/2025 10:00:00"; $End = Get-Date "10/03/2025 11:00:00"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End | Format-List
