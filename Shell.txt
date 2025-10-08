@@ -18,3 +18,11 @@ $Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageT
 Get-GPOReport -Name "Default Domain Policy" -ReportType Html -Path "C:\PasswordPolicy_RitaVo.html"
 
 Search-Mailbox -Identity "Diem.nguyen@ritavo.com" -SearchQuery 'Subject:"Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118]" AND Received:"10/3/2025"' -TargetMailbox "AdminDiscoveryMailbox" -TargetFolder "DiemNguyenFound" -LogLevel Full
+
+WARNING: The Search-Mailbox cmdlet returns up to 10000 results per mailbox if a search query is specified. To return more than 10000 results, use the
+New-MailboxSearch cmdlet or the In-Place eDiscovery & Hold console in the Exchange Administration Center.
+The user or group"AdminDiscoveryMailbox" wasn't found. Make sure you typed it correctly.
+    + CategoryInfo          : InvalidArgument: (0:Int32) [Search-Mailbox], ManagementObjectNotFoundException
+    + FullyQualifiedErrorId : [Server=HCM-MB01,RequestId=8ed51e37-e6bf-4a87-99b4-5c47d567ff55,TimeStamp=10/8/2025 7:22:04 AM] [FailureCategory=Cmdlet-Manag
+   ementObjectNotFoundException] 3B4FD522,Microsoft.Exchange.Management.Tasks.SearchMailbox
+    + PSComputerName        : hcm-mb01.ritavo.com
