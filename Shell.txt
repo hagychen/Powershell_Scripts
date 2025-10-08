@@ -21,5 +21,6 @@ $Start = Get-Date "10/03/2025 10:00:00"; $End = Get-Date "10/03/2025 11:00:00"; 
 
 $Start = Get-Date "10/03/2025 10:00:00"; $End = Get-Date "10/03/2025 11:00:00"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End | Select-Object Timestamp, EventId, Source, MessageSubject, ServerHostname | Format-List
 
-$Start = Get-Date "10/03/2025 10:00:00"; $End = Get-Date "10/03/2025 11:00:00"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End -MessageSubject "Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM]" | Select-Object Timestamp, EventId, Source, MessageSubject, ServerHostname | Format-List | Out-File -FilePath "C:\Log_RitaVo2.txt"
+$Start = Get-Date "10/03/2025 10:00:00"; $End = Get-Date "10/03/2025 11:00:00"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End -MessageSubject "Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM]" | Select-Object Timestamp, EventId, Source, MessageSubject, ServerHostname, TotalBytes | Format-List | Out-File -FilePath "C:\Log_RitaVo2.txt"
+
 
