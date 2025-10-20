@@ -26,3 +26,8 @@ Get-Mailbox | Select Name,EmailAddresses | Where-Object {$_.EmailAddresses -like
 Get-OWAVirtualDirectory | Select Name,InternalURL,ExternalURL
 Get-ECPVirtualDirectory | Select Name,InternalURL,ExternalURL
 Get-AutodiscoverVirtualDirectory | Select Name,InternalURL,ExternalURL
+
+
+----xem chứng chỉ ssl ---
+Get-ExchangeCertificate | FL FriendlyName,Subject,Services,Thumbprint
+
