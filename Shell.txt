@@ -16,3 +16,5 @@ Select-Object Name,PrimarySmtpAddress,EmailAddresses |
 Export-Csv "C:\Temp\ritavowood_alias_check.csv" -NoTypeInformation -Encoding UTF8
 
 ----
+
+Get-EmailAddressPolicy | Select Name,RecipientFilter,EnabledEmailAddressTemplates
