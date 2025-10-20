@@ -31,3 +31,9 @@ Get-AutodiscoverVirtualDirectory | Select Name,InternalURL,ExternalURL
 ----xem chứng chỉ ssl ---
 Get-ExchangeCertificate | FL FriendlyName,Subject,Services,Thumbprint
 
+
+
+----Liệt kê tất cả các Email Address Policy:
+Get-EmailAddressPolicy | Select Name,Priority,RecipientFilter,EnabledEmailAddressTemplates
+
+
