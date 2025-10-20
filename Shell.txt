@@ -1,31 +1,11 @@
 
-$Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End | Format-List
-
-$Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End | Export-Csv -Path "C:\MessageLog_03102025.csv" -NoTypeInformation
-
-$Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End -MessageSubject "Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM]" | Export-Csv -Path "C:\Log_RitaVo.csv" -NoTypeInformation
-
-$Start = "2025-10-03 10:00:00 AM"; $End = "2025-10-03 11:00:00 AM"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End -MessageSubject "Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM]" | Format-List | Out-File -FilePath "C:\Log_RitaVo.txt"
-
-Get-GPOReport -Name "Default Domain Policy" -ReportType Html -Path "C:\PasswordPolicy_RitaVo.html"
-
-Search-Mailbox -Identity "Diem.nguyen@ritavo.com" -SearchQuery 'Subject:"Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118]" AND Received:"10/3/2025"' -TargetMailbox "AdminDiscoveryMailbox" -TargetFolder "DiemNguyenFound" -LogLevel Full
-
-Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" Start "10/03/2025 10:00:00" -End "10/03/2025 11:00:00" |
--> ft Timestamp, Event Id, Source, MessageSubject, ServerHostname
-
-
-$Start = Get-Date "10/03/2025 10:00:00"; $End = Get-Date "10/03/2025 11:00:00"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End | Format-List
-
-$Start = Get-Date "10/03/2025 10:00:00"; $End = Get-Date "10/03/2025 11:00:00"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End | Select-Object Timestamp, EventId, Source, MessageSubject, ServerHostname | Format-Table -AutoSize
-
-$Start = Get-Date "10/03/2025 10:00:00"; $End = Get-Date "10/03/2025 11:00:00"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End | Select-Object Timestamp, EventId, Source, MessageSubject, ServerHostname | Format-List
-
-$Start = Get-Date "10/03/2025 10:00:00"; $End = Get-Date "10/03/2025 11:00:00"; Get-MessageTrackingLog -Sender "noreply-office@ritavo.com" -Recipients "Diem.nguyen@ritavo.com" -Start $Start -End $End -MessageSubject "Đề nghị thanh toán - Rita Võ [TTRTVG1-25100118] [03/10/2025 NGUYỄN NGỌC DIỄM]" | Select-Object Timestamp, EventId, Source, MessageSubject, ServerHostname, TotalBytes | Format-List | Out-File -FilePath "C:\Log_RitaVo2.txt"
-
 Get-AcceptedDomain
 Get-EmailAddressPolicy | fl Name,EnabledEmailAddressTemplates
 
 Get-Mailbox -ResultSize Unlimited | Where-Object {$_.EmailAddresses -like "*@ritavowood.com*"} |Select-Object DisplayName,PrimarySmtpAddress,EmailAddresses
 
 Get-AcceptedDomain | ft Name,DomainName,DomainType
+
+----kiểm tra xem có phải alias không
+Get-Mailbox | Where-Object {$_.PrimarySmtpAddress -like "*@ritavowood.com*"} | Select Name,PrimarySmtpAddress
+---
