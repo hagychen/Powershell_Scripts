@@ -18,3 +18,7 @@ Export-Csv "C:\Temp\ritavowood_alias_check.csv" -NoTypeInformation -Encoding UTF
 ----
 
 Get-EmailAddressPolicy | Select Name,RecipientFilter,EnabledEmailAddressTemplates
+
+
+Get-Mailbox | Select Name,EmailAddresses | Where-Object {$_.EmailAddresses -like "*ritavowood.com*"}
+
