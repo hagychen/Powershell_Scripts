@@ -26,3 +26,5 @@ $Start = Get-Date "10/03/2025 10:00:00"; $End = Get-Date "10/03/2025 11:00:00"; 
 Get-AcceptedDomain
 Get-EmailAddressPolicy | fl Name,EnabledEmailAddressTemplates
 
+Get-Mailbox -ResultSize Unlimited | Where-Object {$_.EmailAddresses -like "*@ritavowood.com*"} |Select-Object DisplayName,PrimarySmtpAddress,EmailAddresses
+
