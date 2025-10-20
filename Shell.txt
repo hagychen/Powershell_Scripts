@@ -28,3 +28,4 @@ Get-EmailAddressPolicy | fl Name,EnabledEmailAddressTemplates
 
 Get-Mailbox -ResultSize Unlimited | Where-Object {$_.EmailAddresses -like "*@ritavowood.com*"} |Select-Object DisplayName,PrimarySmtpAddress,EmailAddresses
 
+Get-AcceptedDomain | ft Name,DomainName,DomainType
