@@ -9,3 +9,10 @@ Get-AcceptedDomain | ft Name,DomainName,DomainType
 ----kiểm tra xem có phải alias không
 Get-Mailbox | Where-Object {$_.PrimarySmtpAddress -like "*@ritavowood.com*"} | Select Name,PrimarySmtpAddress
 ---
+
+----- xuất ra file để check alisas
+Get-Mailbox | Where-Object {$_.EmailAddresses -like "*@ritavowood.com*"} |
+Select-Object Name,PrimarySmtpAddress,EmailAddresses |
+Export-Csv "C:\Temp\ritavowood_alias_check.csv" -NoTypeInformation -Encoding UTF8
+
+----
