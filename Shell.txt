@@ -22,3 +22,7 @@ Get-EmailAddressPolicy | Select Name,RecipientFilter,EnabledEmailAddressTemplate
 
 Get-Mailbox | Select Name,EmailAddresses | Where-Object {$_.EmailAddresses -like "*ritavowood.com*"}
 
+
+Get-OWAVirtualDirectory | Select Name,InternalURL,ExternalURL
+Get-ECPVirtualDirectory | Select Name,InternalURL,ExternalURL
+Get-AutodiscoverVirtualDirectory | Select Name,InternalURL,ExternalURL
