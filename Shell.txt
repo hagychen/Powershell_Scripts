@@ -38,4 +38,7 @@ Get-EmailAddressPolicy | Select Name,Priority,RecipientFilter,EnabledEmailAddres
 
 Get-AcceptedDomain | Where-Object {$_.DomainName -like "*ritavowood.com*"} | Format-List Name,DomainType
 
+Get-AutodiscoverVirtualDirectory | fl Name,InternalUrl,ExternalUrl
+
+
 
