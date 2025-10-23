@@ -40,3 +40,5 @@ Enable-ExchangeCertificate -Server hcm-mb01.ritavo.com -Thumbprint AAAA -Service
 
 $Credential = Get-Credential
 Test-OutlookWebServices -Identity <Email Address> -ClientAccessServer hcm-mb01.ritavo.com -AutoDiscoverServiceUri "https://autodiscover.ritavo.com/Autodiscover/Autodiscover.xml" -TargetUri https://mail.ritavo.com/ews/exchange.asmx -ShowResults
+
+Test-ServiceHealth -Identity "hai.tn@ritavo.com" -ClientAccessServer hcm-mb01.ritavo.com | Format-List
