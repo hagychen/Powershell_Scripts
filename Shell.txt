@@ -2,3 +2,6 @@ Get-ExchangeCertificate | fl FriendlyName,Subject,Thumbprint,Services
 
 $CertData = [System.IO.File]::ReadAllBytes('C:\Certs\cert')
 Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -FileData $CertData -PrivateKeyExportable $true
+
+
+Enable-ExchangeCertificate -Server hcm-mb01.ritavo.com -Thumbprint <Thumbprint> -Services "IIS,SMTP"
