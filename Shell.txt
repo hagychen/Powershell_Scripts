@@ -30,3 +30,6 @@ Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -FileData $PfxBytes -Pass
 Remove-ExchangeCertificate -Server hcm-mb01.ritavo.com -Thumbprint 8D72AC193D6E6475F448D1A86A9812BD9616E85A
 
 0D72AC193D6E6475F440D1A86A9812BD9616E85A
+
+Enable-ExchangeCertificate -Server hcm-mb01.ritavo.com -Thumbprint 0D72AC193D6E6475F440D1A86A9812BD9616E85A -Services "IIS,SMTP"
+
