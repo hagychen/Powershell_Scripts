@@ -35,3 +35,6 @@ Enable-ExchangeCertificate -Server hcm-mb01.ritavo.com -Thumbprint 0D72AC193D6E6
 
 Enable-ExchangeCertificate -Server hcm-mb01.ritavo.com -Thumbprint 567525E7D893D41DFC479ED5D61AADC F2436449C2 -Services "IIS,SMTP"
 
+Enable-ExchangeCertificate -Server hcm-mb01.ritavo.com -Thumbprint AAAA -Services "IIS,SMTP,POP,IMAP"
+
+
