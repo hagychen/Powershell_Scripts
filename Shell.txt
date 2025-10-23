@@ -5,3 +5,10 @@ Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -FileData $CertData -Priv
 
 
 Enable-ExchangeCertificate -Server hcm-mb01.ritavo.com -Thumbprint <Thumbprint> -Services "IIS,SMTP"
+
+openssl pkcs12 -export \
+ -out ritavowood.pfx \
+ -inkey Private.key \
+ -in cert \
+ -certfile My_CA_Bundle \
+ -name "ritavowood.com"
