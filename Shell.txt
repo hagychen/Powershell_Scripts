@@ -19,3 +19,7 @@ Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File 'C:\Certs\ritavowoo
 
 $PfxPassword = Read-Host -Prompt "Nhập Mật khẩu PFX" -AsSecureString
 Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File "F:\Setup\File Cert SSL mail.ritavowood.com\ritavowood.pfx" -Password $PfxPassword
+
+Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File 'C:\Certs\ritavowood.pfx' -Password (Get-Credential).Password
+
+Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File "C:\PFX\ritavowood.pfx" -Password $PfxPassword
