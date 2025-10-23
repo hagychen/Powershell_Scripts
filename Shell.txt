@@ -14,3 +14,5 @@ openssl pkcs12 -export \
  -name "ritavowood.com"
 
 openssl pkcs12 -export -out ritavowood.pfx -inkey ritavowood.key -in cert.crt -certfile fullchain.crt
+
+Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File 'C:\Certs\ritavowood.pfx' -Password (Get-Credential).Password
