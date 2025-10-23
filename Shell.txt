@@ -23,3 +23,6 @@ Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File "F:\Setup\File Cert
 Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File 'C:\Certs\ritavowood.pfx' -Password (Get-Credential).Password
 
 Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File "C:\PFX\ritavowood.pfx" -Password $PfxPassword
+
+$PfxBytes = [System.IO.File]::ReadAllBytes('F:\Setup\cert\ritavowood.pfx')
+Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -FileData $PfxBytes -Password $PfxPassword
