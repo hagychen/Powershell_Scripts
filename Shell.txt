@@ -16,3 +16,6 @@ openssl pkcs12 -export \
 openssl pkcs12 -export -out ritavowood.pfx -inkey ritavowood.key -in cert.crt -certfile fullchain.crt
 
 Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File 'C:\Certs\ritavowood.pfx' -Password (Get-Credential).Password
+
+$PfxPassword = Read-Host -Prompt "Nhập Mật khẩu PFX" -AsSecureString
+Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File "F:\Setup\File Cert SSL mail.ritavowood.com\ritavowood.pfx" -Password $PfxPassword
