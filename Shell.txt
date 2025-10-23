@@ -12,3 +12,5 @@ openssl pkcs12 -export \
  -in cert \
  -certfile My_CA_Bundle \
  -name "ritavowood.com"
+
+openssl pkcs12 -export -out ritavowood.pfx -inkey ritavowood.key -in cert.crt -certfile fullchain.crt
