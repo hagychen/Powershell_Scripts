@@ -26,3 +26,5 @@ Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -File "C:\PFX\ritavowood.
 
 $PfxBytes = [System.IO.File]::ReadAllBytes('F:\Setup\cert\ritavowood.pfx')
 Import-ExchangeCertificate -Server hcm-mb01.ritavo.com -FileData $PfxBytes -Password $PfxPassword
+
+Remove-ExchangeCertificate -Server hcm-mb01.ritavo.com -Thumbprint 8D72AC193D6E6475F448D1A86A9812BD9616E85A
