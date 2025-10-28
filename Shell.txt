@@ -47,3 +47,6 @@ Test-AutoDiscover -ClientAccessServer hcm-mb01.ritavo.com -External -EmailAddres
 
 Test-ServiceHealth -Identity "hai.tn@ritavo.com" -ClientAccessServer hcm-mb01.ritavo.com | Format-List
 
+
+Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" -and $_.DisplayName -like "phuongnhu.pham@ritavowood.com" } | FT DisplayName, MailboxGuid, Database, DisconnectDate
+
